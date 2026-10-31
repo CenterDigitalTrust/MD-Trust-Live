@@ -97,6 +97,8 @@ The supplied demonstration used Twitch Hosted Test and Android. Public Twitch av
 
 ## Licensing and secrets
 
+Copyright 2026 Yurii Ivanov.
+
 Original project contributions in this distribution are available for noncommercial use under the license in [LICENSE](LICENSE). This is **source-available, noncommercial licensing**, not an OSI open-source license. See [third-party notices](THIRD_PARTY_NOTICES.md) for preserved upstream rights.
 
 Real `.env` files, wallets, API secrets, signing keys and access documents must remain outside version control. Examples contain configuration names, not production credentials.

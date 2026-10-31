@@ -1,6 +1,6 @@
 # Licensing scope and third-party notices
 
-Required Notice: Copyright 2026 NGO Center for Digital Trust
+Required Notice: Copyright 2026 Yurii Ivanov
 
 Original project contributions are offered under PolyForm Noncommercial 1.0.0. Dependency packages retain their own licenses; installation through npm, Flutter or Gradle does not relicense them.
 
