@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="mdtl_active" formatted="false">Sesión del dispositivo activa</string>
+  <string name="mdtl_intro" formatted="false">Actividad firmada para tu comunidad de Twitch.</string>
+  <string name="mdtl_stop" formatted="false">Finalizar sesión</string>
+</resources>

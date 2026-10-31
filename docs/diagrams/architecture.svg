@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">Digital Trust Live architecture</title>
+<desc id="desc">Video flows to Twitch separately. Android signs events, EBS verifies and stores them, and the extension displays status. Optional Merkle roots are anchored on Solana.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8173b6"/></marker></defs>
+<rect width="1200" height="760" fill="#f7f7fc"/>
+<g font-family="Arial,sans-serif" fill="#252043">
+<text x="48" y="56" font-size="30" font-weight="bold">DIGITAL TRUST LIVE</text><text x="48" y="87" font-size="17">Device activity, an ordered journal and independently checkable commitments</text>
+<g fill="white" stroke="#d5cbee" stroke-width="2">
+<rect x="48" y="130" width="280" height="100" rx="12"/><rect x="458" y="130" width="280" height="100" rx="12"/><rect x="868" y="130" width="280" height="100" rx="12"/>
+<rect x="48" y="325" width="280" height="125" rx="12"/><rect x="458" y="325" width="280" height="125" rx="12"/><rect x="868" y="325" width="280" height="125" rx="12"/>
+<rect x="48" y="555" width="280" height="120" rx="12"/><rect x="458" y="555" width="280" height="120" rx="12"/><rect x="868" y="555" width="280" height="120" rx="12"/>
+</g>
+<g font-size="21" font-weight="bold"><text x="70" y="165">Streaming app / encoder</text><text x="480" y="165">Twitch broadcast</text><text x="890" y="165">Twitch Extension</text><text x="70" y="362">Android companion</text><text x="480" y="362">Backend (EBS)</text><text x="890" y="362">PostgreSQL</text><text x="70" y="592">Journal export</text><text x="480" y="592">Merkle batch</text><text x="890" y="592">Solana Memo</text></g>
+<g font-size="16"><text x="70" y="196">Camera / OBS / IRL source</text><text x="480" y="196">Video and live-state API</text><text x="890" y="196">Status and FairDrop evidence</text><text x="70" y="393">Keystore P-256 signing</text><text x="70" y="420">Start / pulse / stop / giveaway</text><text x="480" y="393">Signature, nonce and chain checks</text><text x="480" y="420">Authenticated channel access</text><text x="890" y="393">Accepted journal and snapshots</text><text x="890" y="420">Durable transaction recovery</text><text x="70" y="625">Offline integrity verification</text><text x="70" y="652">Online ledger check is separate</text><text x="480" y="625">Root covers one session range</text><text x="480" y="652">Multiple events, one commitment</text><text x="890" y="625">Optional on-chain anchor</text><text x="890" y="652">Finalized signer + root checks</text></g>
+<g stroke="#8173b6" stroke-width="2.5" fill="none" marker-end="url(#arrow)"><path d="M328 180H458"/><path d="M738 180H868"/><path d="M328 385H458"/><path d="M738 385H868"/><path d="M598 230V325"/><path d="M738 345L990 230"/><path d="M548 450L240 555"/><path d="M598 450V555"/><path d="M738 615H868"/></g>
+<g font-size="14" fill="#5d527c"><text x="362" y="166">Video</text><text x="764" y="166">Channel</text><text x="348" y="372">HTTPS</text><text x="766" y="372">Persist</text><text x="611" y="282">Helix status</text><text x="807" y="276">Viewer polling</text><text x="333" y="522">Evidence</text><text x="611" y="507">Optional anchor</text><text x="766" y="600">Root</text></g>
+<text x="48" y="726" font-size="16">The journal proves signed application activity and integrity. Video content is not authenticated by this pipeline.</text>
+</g></svg>

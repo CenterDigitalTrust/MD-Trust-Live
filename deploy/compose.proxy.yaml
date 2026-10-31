@@ -1,0 +1,11 @@
+# Optional Azure ingress: use together with compose.yaml after approving Caddy route.
+services:
+  ebs:
+    networks:
+      default: {}
+      mdfp_ingress:
+        aliases: [mdtl-ebs]
+networks:
+  mdfp_ingress:
+    external: true
+    name: app_md-network

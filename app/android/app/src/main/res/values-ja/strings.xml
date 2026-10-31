@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="mdtl_active" formatted="false">端末のセッションが有効です</string>
+  <string name="mdtl_intro" formatted="false">Twitchコミュニティに署名付きの活動記録を。</string>
+  <string name="mdtl_stop" formatted="false">セッションを終了</string>
+</resources>

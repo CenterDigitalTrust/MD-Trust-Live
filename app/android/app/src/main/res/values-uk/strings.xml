@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="mdtl_active" formatted="false">Сесія пристрою активна</string>
+  <string name="mdtl_intro" formatted="false">Підписана активність для вашої спільноти Twitch.</string>
+  <string name="mdtl_stop" formatted="false">Завершити сесію</string>
+</resources>

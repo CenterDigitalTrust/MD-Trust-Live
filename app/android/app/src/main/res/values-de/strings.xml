@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="mdtl_active" formatted="false">Gerätesitzung aktiv</string>
+  <string name="mdtl_intro" formatted="false">Signierte Aktivität für deine Twitch-Community.</string>
+  <string name="mdtl_stop" formatted="false">Sitzung beenden</string>
+</resources>

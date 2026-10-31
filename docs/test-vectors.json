@@ -1,0 +1,55 @@
+{
+  "canonical": [
+    {
+      "input": {
+        "z": "quote\"\n",
+        "a": [
+          1,
+          true,
+          null,
+          "Привіт"
+        ]
+      },
+      "expected": "{\"a\":[1,true,null,\"Привіт\"],\"z\":\"quote\\\"\\n\"}"
+    }
+  ],
+  "spki": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEU43BW9O1xsuHEv2BW2l/o3YKKWybfzXCfgClDHF+48aByehfj/dZ81L210zOCQMI5n1LBdRInaR3b5qkesM//g==",
+  "event": {
+    "header": {
+      "v": 1,
+      "channel_id": "123",
+      "session_id": "vector-session",
+      "seq": 0,
+      "type": "SESSION_START",
+      "client_ts_ms": 1793232000000,
+      "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "payload_hash": "1e7ecddc5a1725e8f599372c7a7606299538701c0eca8a9ca6ea087940dc3bf4",
+      "challenge": "1212121212121212121212121212121212121212121212121212121212121212"
+    },
+    "payload": {
+      "app_ver": "0.1.0",
+      "device_id": "vector-device",
+      "geo_enabled": false
+    },
+    "signature": "MEYCIQDPSy3fXxhzrgVUMXskxINGvbL8FfHIVfHbfTHJ4sTIegIhALmz1BRyDkZWeJruqtkqqnQTHTVcQMPMIFv64aTBna0Q",
+    "event_hash": "5a819abac410a59c1e65a5bf0362142608b8c382ac767190fc4b19443b20a500",
+    "received_at": 1793232000000,
+    "challenge_issued_at": 1793231999900
+  },
+  "draw": {
+    "giveawayId": "vector-draw",
+    "entries": [
+      "10",
+      "20",
+      "3"
+    ],
+    "seed": "0101010101010101010101010101010101010101010101010101010101010101",
+    "root": "080c802ccd4ed1da5c316f71552fefe199f9d696b57446c2d0200b2bef768df2",
+    "count": 3,
+    "winner": 1,
+    "proof": [
+      "4797b969f7b17ee9a56f10564a9a25cc504a15f20aa8116f9401b2d43a9e4858",
+      "c932901e4ff5e7dc156ce186e16f9c0baa9c4fd7d8582f07575ad26843c2abf2"
+    ]
+  }
+}

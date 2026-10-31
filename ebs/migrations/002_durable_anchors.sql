@@ -1,0 +1,10 @@
+BEGIN;
+ALTER TABLE anchors ADD COLUMN IF NOT EXISTS raw_tx text;
+ALTER TABLE anchors ADD COLUMN IF NOT EXISTS last_valid_height bigint;
+ALTER TABLE anchors ADD COLUMN IF NOT EXISTS status text NOT NULL DEFAULT 'SUBMITTED';
+ALTER TABLE anchors ADD COLUMN IF NOT EXISTS signer text;
+ALTER TABLE anchors ADD COLUMN IF NOT EXISTS fee_lamports bigint;
+ALTER TABLE anchors ADD COLUMN IF NOT EXISTS updated_at bigint;
+ALTER TABLE anchors DROP CONSTRAINT IF EXISTS anchors_session_id_from_seq_to_seq_key;
+CREATE UNIQUE INDEX IF NOT EXISTS anchors_cluster_range ON anchors(session_id,cluster,from_seq,to_seq);
+COMMIT;

@@ -1,0 +1,9 @@
+.git
+node_modules
+app
+releases
+**/.env
+**/*.env
+**/*.pem
+**/*.key
+work

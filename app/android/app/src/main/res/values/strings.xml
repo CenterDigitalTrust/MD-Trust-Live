@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="mdtl_active" formatted="false">Device session active</string>
+  <string name="mdtl_intro" formatted="false">Signed activity for your Twitch community.</string>
+  <string name="mdtl_stop" formatted="false">Stop session</string>
+</resources>

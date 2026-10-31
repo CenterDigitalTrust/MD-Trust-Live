@@ -1,0 +1,44 @@
+name: md-twitch-trust
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: mdtl
+      POSTGRES_DB: mdtl
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set a database password}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U mdtl -d mdtl]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    mem_limit: 512m
+  ebs:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    restart: unless-stopped
+    env_file:
+      - path: .env
+        required: true
+      - path: wallet.env
+        required: false
+    environment:
+      HOST: 0.0.0.0
+      PORT: 8080
+    ports:
+      - 127.0.0.1:8090:8080
+    depends_on:
+      db:
+        condition: service_healthy
+    mem_limit: 512m
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: [ALL]
+volumes:
+  pgdata:

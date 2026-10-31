@@ -1,0 +1,9 @@
+{
+    email admin@digitaltrust.living
+}
+
+api.digitaltrust.living {
+    handle_path /twitch/* {
+        reverse_proxy mdtl-ebs:8080
+    }
+}
